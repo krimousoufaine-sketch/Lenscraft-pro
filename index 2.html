@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="LensCraft — photographie de portraits, mariages, événements et marques. Des moments qui durent toujours.">
+  <title>LensCraft — Photographie & émotions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#10110f;--panel:#191a17;--cream:#f5f1e9;--muted:#b9b6ad;--gold:#d8b779;--line:rgba(245,241,233,.14);--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--bg);color:var(--cream);font-family:"DM Sans",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container{width:min(var(--max),calc(100% - 40px));margin:auto}.serif{font-family:"Playfair Display",serif}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.19em;font-size:.72rem;font-weight:700}.section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px}.section-head h2,.about-copy h2,.contact-copy h2{font:500 clamp(2.2rem,5vw,4rem)/1.08 "Playfair Display",serif;margin:10px 0 0}.section-head p{max-width:360px;color:var(--muted);margin:0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 20px;border:1px solid var(--gold);font-weight:700;font-size:.88rem;transition:.2s}.btn.primary{background:var(--gold);color:#171610}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn.ghost{border-color:rgba(255,255,255,.45);background:rgba(0,0,0,.18)}.nav{position:sticky;top:0;z-index:10;background:rgba(16,17,15,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font:600 1.55rem "Playfair Display",serif;letter-spacing:.02em}.brand span{color:var(--gold)}.nav-links{display:flex;align-items:center;gap:25px;font-size:.88rem;color:#e4e0d7}.nav-links a:hover{color:var(--gold)}.menu-toggle{display:none;background:none;color:var(--cream);border:1px solid var(--line);padding:8px 11px;font:inherit}
+    .hero{min-height:690px;display:flex;align-items:center;position:relative;isolation:isolate;background:linear-gradient(90deg,rgba(8,10,9,.88) 0%,rgba(8,10,9,.58) 48%,rgba(8,10,9,.12) 100%),url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=85") center 48%/cover}.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,var(--bg),transparent 24%)}.hero-content{max-width:720px;padding:90px 0 110px}.hero h1{font:500 clamp(3.2rem,8vw,6.6rem)/.99 "Playfair Display",serif;letter-spacing:-.035em;margin:22px 0}.hero h1 em{color:var(--gold);font-weight:400}.hero p{max-width:530px;color:#e0ddd5;font-size:1.08rem;margin:0 0 28px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.hero-note{margin-top:54px;display:flex;align-items:center;gap:13px;color:#e0ddd5;font-size:.82rem}.hero-note:before{content:"";width:42px;height:1px;background:var(--gold)}
+    .intro-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:23px 0}.strip-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.85rem}.strip-inner span:before{content:"✦";color:var(--gold);margin-right:10px}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:25px}.filter{background:transparent;color:var(--muted);border:1px solid var(--line);padding:9px 15px;border-radius:99px;font:inherit;font-size:.82rem;cursor:pointer}.filter.active,.filter:hover{color:var(--bg);background:var(--gold);border-color:var(--gold)}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.photo-card{position:relative;overflow:hidden;min-height:280px;background:#242520;cursor:pointer}.photo-card img{width:100%;height:100%;min-height:280px;object-fit:cover;transition:transform .55s}.photo-card:hover img{transform:scale(1.05)}.photo-card:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.78))}.photo-caption{position:absolute;z-index:1;bottom:18px;left:18px;right:18px;display:flex;justify-content:space-between;align-items:end;gap:8px}.photo-caption strong{font:500 1.25rem "Playfair Display",serif}.photo-caption small{display:block;color:#ddd;font-size:.76rem}.photo-caption .arrow{font-size:1.2rem;color:var(--gold)}.gallery-note{color:var(--muted);font-size:.82rem;margin-top:18px}
+    .services{background:#171815}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service-card{border:1px solid var(--line);padding:25px 20px;min-height:280px;display:flex;flex-direction:column}.service-number{color:var(--gold);font-size:.8rem}.service-card h3{font:500 1.45rem "Playfair Display",serif;margin:25px 0 10px}.service-card p{color:var(--muted);font-size:.9rem;margin:0 0 22px}.price{margin-top:auto;color:var(--gold);font-weight:700}.price small{color:var(--muted);font-weight:400}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about-image{position:relative}.about-image img{width:100%;height:530px;object-fit:cover}.image-tag{position:absolute;bottom:-18px;right:-16px;background:var(--gold);color:#191a17;padding:20px 23px;font:500 1.3rem "Playfair Display",serif}.about-copy p{color:var(--muted);margin:22px 0}.values{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0}.value{border-top:1px solid var(--line);padding-top:13px}.value strong{display:block;font-size:.93rem}.value span{color:var(--muted);font-size:.82rem}
+    .process{background:#171815}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.step{border-top:1px solid var(--line);padding-top:20px}.step b{font:500 2.2rem "Playfair Display",serif;color:var(--gold)}.step h3{font:500 1.35rem "Playfair Display",serif;margin:10px 0}.step p{color:var(--muted);font-size:.9rem;margin:0}
+    .contact{background:linear-gradient(110deg,rgba(13,14,12,.95),rgba(13,14,12,.72)),url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1800&q=80") center/cover}.contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:60px;align-items:center}.contact-copy p{max-width:500px;color:var(--muted);margin:22px 0 28px}.contact-panel{background:rgba(25,26,23,.92);border:1px solid var(--line);padding:28px}.contact-item{padding:16px 0;border-bottom:1px solid var(--line)}.contact-item:last-child{border:0}.contact-item small{display:block;color:var(--muted);margin-bottom:4px}.contact-item strong{font-weight:600;overflow-wrap:anywhere}.contact-warning{color:var(--muted);font-size:.78rem;margin-top:18px}.footer{padding:27px 0;border-top:1px solid var(--line)}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.8rem}.footer-links{display:flex;gap:18px}.footer-links a:hover{color:var(--gold)}
+    .lightbox{display:none;position:fixed;z-index:50;inset:0;background:rgba(0,0,0,.92);align-items:center;justify-content:center;padding:25px}.lightbox.open{display:flex}.lightbox img{max-width:min(100%,1000px);max-height:85vh;object-fit:contain}.lightbox button{position:absolute;top:18px;right:22px;border:1px solid #aaa;background:#171815;color:white;padding:10px 14px;font-size:1.1rem;cursor:pointer}
+    @media(max-width:900px){.nav-links{gap:14px}.service-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:35px}.contact-grid{gap:30px}.hero{min-height:620px}}
+    @media(max-width:680px){.container{width:min(var(--max),calc(100% - 30px))}.section{padding:72px 0}.nav-inner{height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#141512;padding:18px 22px 22px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.nav-links a{padding:8px 0}.nav-links .btn{margin-top:5px}.hero{min-height:630px;background-position:58% center}.hero-content{padding:70px 0 85px}.hero h1{font-size:clamp(3rem,15vw,4.7rem)}.hero p{font-size:1rem}.section-head{display:block}.section-head p{margin-top:15px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.photo-card,.photo-card img{min-height:220px}.photo-caption{left:11px;right:10px;bottom:12px}.photo-caption strong{font-size:1rem}.photo-caption small{font-size:.68rem}.service-grid{gap:10px}.service-card{padding:18px 14px;min-height:260px}.service-card h3{font-size:1.25rem}.about-grid,.contact-grid{grid-template-columns:1fr}.about-image img{height:370px}.image-tag{right:5px}.about-copy{margin-top:20px}.steps{grid-template-columns:1fr;gap:22px}.contact-panel{padding:20px}.strip-inner{gap:10px}.strip-inner span{width:calc(50% - 8px)}}
+    @media(max-width:390px){.gallery{grid-template-columns:1fr}.photo-card,.photo-card img{min-height:300px}.service-grid{grid-template-columns:1fr 1fr}.hero-actions .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <!-- IMPORTANT : remplacez le numéro WhatsApp dans le script tout en bas par votre vrai numéro, au format international sans + ni espaces. -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#accueil" aria-label="LensCraft accueil">Lens<span>Craft</span><span style="color:var(--cream)">.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰ Menu</button>
+      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="#galerie">Galerie</a><a href="#services">Services & tarifs</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
+        <a class="btn primary" href="#contact">Réserver une séance ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="accueil">
+      <div class="container hero-content">
+        <div class="eyebrow">Photographie • Maroc</div>
+        <h1>Des moments<br>qui durent <em>toujours.</em></h1>
+        <p>Des images naturelles, une lumière qui raconte une histoire et des souvenirs que vous aurez plaisir à revivre, encore et encore.</p>
+        <div class="hero-actions"><a class="btn primary" href="#galerie">Découvrir la galerie ↘</a><a class="btn ghost" href="#contact">Parlons de votre projet</a></div>
+        <div class="hero-note">Portraits · Mariages · Événements · Marques</div>
+      </div>
+    </section>
+    <div class="intro-strip"><div class="container strip-inner"><span>Des images authentiques</span><span>Une approche humaine</span><span>Chaque histoire compte</span><span>Créativité & passion</span></div></div>
+    <section class="section" id="galerie">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Sélection de travaux</div><h2 class="serif">La galerie</h2></div><p>Chaque image capture une émotion, une lumière ou un instant qu'on ne veut pas oublier.</p></div>
+        <div class="filters" role="group" aria-label="Filtrer la galerie">
+          <button class="filter active" data-filter="all">Tout voir</button><button class="filter" data-filter="portrait">Portraits</button><button class="filter" data-filter="mariage">Mariages</button><button class="filter" data-filter="evenement">Événements</button><button class="filter" data-filter="nature">Nature & voyage</button>
+        </div>
+        <div class="gallery">
+          <article class="photo-card" data-category="portrait" tabindex="0" role="button" aria-label="Agrandir Portrait naturel"><img loading="lazy" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="Portrait en lumière naturelle"><div class="photo-caption"><div><strong>Portraits</strong><small>Naturels & lumineux</small></div><span class="arrow">↗</span></div></article>
+          <article class="photo-card" data-category="mariage" tabindex="0" role="button" aria-label="Agrandir Mariage"><img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Décor de mariage élégant"><div class="photo-caption"><div><strong>Mariages</strong><small>Des souvenirs précieux</small></div><span class="arrow">↗</span></div></article>
+          <article class="photo-card" data-category="nature" tabindex="0" role="button" aria-label="Agrandir Paysage"><img loading="lazy" src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=85" alt="Paysage naturel baigné de soleil"><div class="photo-caption"><div><strong>Voyages</strong><small>Le monde en images</small></div><span class="arrow">↗</span></div></article>
+          <article class="photo-card" data-category="evenement" tabindex="0" role="button" aria-label="Agrandir Événement"><img loading="lazy" src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=85" alt="Événement et public sous les lumières"><div class="photo-caption"><div><strong>Événements</strong><small>L'énergie de l'instant</small></div><span class="arrow">↗</span></div></article>
+          <article class="photo-card" data-category="portrait" tabindex="0" role="button" aria-label="Agrandir Portrait éditorial"><img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85" alt="Portrait éditorial en extérieur"><div class="photo-caption"><div><strong>Éditorial</strong><small>Votre personnalité</small></div><span class="arrow">↗</span></div></article>
+          <article class="photo-card" data-category="nature" tabindex="0" role="button" aria-label="Agrandir Montagnes"><img loading="lazy" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85" alt="Lac de montagne et nature paisible"><div class="photo-caption"><div><strong>Nature</strong><small>La beauté du monde</small></div><span class="arrow">↗</span></div></article>
+        </div>
+        <p class="gallery-note">Les photos présentées sont des images de démonstration. Remplacez-les par vos propres photos pour montrer votre travail.</p>
+      </div>
+    </section>
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Ce que je propose</div><h2 class="serif">Services & tarifs</h2></div><p>Des formules simples, adaptées à vos envies. Chaque projet peut être personnalisé.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><span class="service-number">01 / PERSONNEL</span><h3>Portraits</h3><p>Portrait individuel, couple, famille ou séance créative en extérieur.</p><div class="price">À partir de 400 DH <small>/ séance</small></div></article>
+          <article class="service-card"><span class="service-number">02 / CÉLÉBRATION</span><h3>Mariages</h3><p>Les émotions, les détails et les grands moments de votre journée.</p><div class="price">À partir de 3 500 DH <small>/ formule</small></div></article>
+          <article class="service-card"><span class="service-number">03 / MOMENTS</span><h3>Événements</h3><p>Anniversaires, fêtes privées et événements professionnels.</p><div class="price">À partir de 1 500 DH <small>/ événement</small></div></article>
+          <article class="service-card"><span class="service-number">04 / ENTREPRISE</span><h3>Photo de marque</h3><p>Images pour produits, réseaux sociaux, commerces et projets créatifs.</p><div class="price">À partir de 1 200 DH <small>/ projet</small></div></article>
+        </div>
+        <p class="gallery-note">Tarifs indicatifs de démonstration à modifier selon vos vrais prix, la durée et le lieu de la séance.</p>
+      </div>
+    </section>
+    <section class="section" id="apropos">
+      <div class="container about-grid">
+        <div class="about-image"><img loading="lazy" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1100&q=85" alt="Appareil photo professionnel"><div class="image-tag">L'art de raconter.</div></div>
+        <div class="about-copy"><div class="eyebrow">Un regard, une histoire</div><h2>Plus qu'une photo,<br><em>une émotion.</em></h2><p>Chez LensCraft, la photographie est une manière de garder une trace des moments qui comptent. L'objectif : créer des images sincères, soignées et fidèles à votre histoire.</p><p>De la première idée à la livraison des photos, chaque détail compte. On prend le temps de comprendre votre vision pour créer un résultat qui vous ressemble.</p><div class="values"><div class="value"><strong>Qualité & créativité</strong><span>Une attention portée à chaque détail.</span></div><div class="value"><strong>Écoute & disponibilité</strong><span>Un accompagnement simple et humain.</span></div><div class="value"><strong>Chaque histoire compte</strong><span>Des images pensées pour vous.</span></div><div class="value"><strong>Simple & accessible</strong><span>Des formules claires et flexibles.</span></div></div><a class="btn" href="#contact">Faisons connaissance ↗</a></div>
+      </div>
+    </section>
+    <section class="section process">
+      <div class="container"><div class="section-head"><div><div class="eyebrow">Comment ça se passe ?</div><h2 class="serif">En trois étapes</h2></div><p>Un processus simple, de votre première idée jusqu'à vos images finales.</p></div>
+        <div class="steps"><article class="step"><b>01</b><h3>On échange</h3><p>Vous me racontez votre projet, vos envies, la date et le lieu souhaités.</p></article><article class="step"><b>02</b><h3>On prépare</h3><p>On choisit ensemble le style, la formule et les détails de la séance.</p></article><article class="step"><b>03</b><h3>On capture</h3><p>Place aux moments vrais, puis à la sélection et à la livraison des images.</p></article></div>
+      </div>
+    </section>
+    <section class="section contact" id="contact">
+      <div class="container contact-grid"><div class="contact-copy"><div class="eyebrow">Votre histoire commence ici</div><h2>Prêt à créer<br>de beaux souvenirs ?</h2><p>Parlez-moi de votre idée, même si elle n'est pas encore complètement définie. Nous verrons ensemble comment la transformer en images.</p><a class="btn primary whatsapp-link" href="#" target="_blank" rel="noopener">Discuter sur WhatsApp ↗</a></div>
+        <div class="contact-panel"><div class="eyebrow">Contact</div><div class="contact-item"><small>WhatsApp</small><strong class="phone-display">À personnaliser</strong></div><div class="contact-item"><small>Zone</small><strong>Maroc — sur demande</strong></div><div class="contact-item"><small>Disponibilité</small><strong>Sur réservation</strong></div><p class="contact-warning">Avant de publier le site, remplacez le numéro de démonstration par votre vrai numéro WhatsApp dans le code.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#accueil">Lens<span>Craft</span><span style="color:var(--cream)">.</span></a><span>© <span id="year"></span> LensCraft. Tous droits réservés.</span><div class="footer-links"><a href="#galerie">Galerie</a><a href="#services">Services</a><a href="#contact">Contact</a></div></div></footer>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Agrandissement de la photo"><button id="closeLightbox" aria-label="Fermer">✕ Fermer</button><img id="lightboxImage" src="" alt=""></div>
+  <script>
+    // IMPORTANT : remplacez 212600000000 par votre numéro WhatsApp, sans +, espaces ni tirets.
+    const WHATSAPP_NUMBER = "212600000000";
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener("click", () => {
+      const open = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.textContent = open ? "✕ Fermer" : "☰ Menu";
+    });
+    navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "☰ Menu";
+    }));
+    document.querySelectorAll(".filter").forEach(button => button.addEventListener("click", () => {
+      document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
+      button.classList.add("active");
+      const filter = button.dataset.filter;
+      document.querySelectorAll(".photo-card").forEach(card => {
+        card.style.display = filter === "all" || card.dataset.category === filter ? "" : "none";
+      });
+    }));
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    function showPhoto(card) {
+      const img = card.querySelector("img");
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      lightbox.classList.add("open");
+      document.getElementById("closeLightbox").focus();
+    }
+    document.querySelectorAll(".photo-card").forEach(card => {
+      card.addEventListener("click", () => showPhoto(card));
+      card.addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); showPhoto(card); } });
+    });
+    function closePhoto(){ lightbox.classList.remove("open"); lightboxImage.src = ""; }
+    document.getElementById("closeLightbox").addEventListener("click", closePhoto);
+    lightbox.addEventListener("click", event => { if(event.target === lightbox) closePhoto(); });
+    document.addEventListener("keydown", event => { if(event.key === "Escape") closePhoto(); });
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll(".whatsapp-link").forEach(link => {
+      link.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent("Bonjour LensCraft, je souhaite me renseigner sur une séance photo.");
+    });
+    document.querySelectorAll(".phone-display").forEach(el => el.textContent = WHATSAPP_NUMBER === "212600000000" ? "À personnaliser" : "+" + WHATSAPP_NUMBER);
+  </script>
+</body>
+</html>
